@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" class="stylesheet" />
+        <title>handlebars</title>
+    </head>
+    <body>
+        <div class="authors-container">
+            <script id="authors" type="text/x-handlebars-template">
+                <!-- <div class="author-section"> -->
+                    {{#authors}}
+                        <div class="author-tile">
+                            <h1 class="name">
+                                {{name}}
+                            </h1>
+                            <div class="life-death">
+                            <p class="born">
+                                {{born}}
+                            </p>
+                            <p class="died">
+                                {{died}}
+                            </p>
+                            </div>
+                            <div class="books">
+                            <ul>
+                                {{#selectedWritings}}
+                                    <li>
+                                        {{this}}
+                                    </li>
+                                {{/selectedWritings}}
+                            </ul>
+                            </div>
+                            <div class="quote-image">
+                                <p id="quote">{{quote}}</p>
+                                <img src={{photo}}>
+                            </div>
+                        </div>
+
+                    {{/authors}}
+                </div>
+            </script>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<!-- <h1>
+                    {{name}}
+                </h1>
+                <h3>
+                    {{}}
+                </h3>
+                <ul>
+                    {{#}}
+                        <li>
+                            {{this}}
+                        </li>
+                    {{/}}
+                </ul> -->

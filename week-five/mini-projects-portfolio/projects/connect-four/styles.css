@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(215, 215, 215);
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    width: 569px;
+    top: 5%;
+    left: 3%;
+    font: 30px "Fira Sans", sans-serif;
+    background-color: antiquewhite;
+    color: darkred;
+    padding-left: 5px;
+    border-bottom: 1px darkred solid;
+}
+
+#p1-html {
+    width: 7%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 7%;
+    background-color: tomato;
+    color: antiquewhite;
+    text-align: center;
+    font: 30px "Fira Sans", sans-serif;
+}
+
+#p2-html {
+    position: absolute;
+    width: 7%;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    background-color: yellowgreen;
+    color: antiquewhite;
+    text-align: center;
+    font: 30px "Fira Sans", sans-serif;
+}
+
+.board-container {
+    position: absolute;
+    left: 3%;
+    top: 11%;
+}
+
+.board {
+    display: flex;
+}
+
+.player1 {
+    transition: 1.5s;
+    background-color: tomato;
+}
+
+.player2 {
+    transition: 1.5s;
+    background-color: yellowgreen;
+}
+
+.slot {
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+}
+
+.hole {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transform: translate(-30px, -30px);
+    border: 38px lightslategray solid;
+}
+
+.footer {
+    position: relative;
+    margin-top: 1%;
+}
+
+.clear {
+    color: darkred;
+    font: 26px "Fira Sans", sans-serif;
+    margin-right: 1%;
+    border-radius: 0%;
+    border: 0px antiquewhite solid;
+    background-color: antiquewhite;
+    border-top: 1px darkred solid;
+    width: 25.5%;
+    transition: 1.5s;
+}
+
+.play-again {
+    color: antiquewhite;
+    font: 26px "Fira Sans", sans-serif;
+    margin-right: 1%;
+    border-radius: 0%;
+    border: 0px darkred solid;
+    border-top: 1px antiquewhite solid;
+    visibility: hidden;
+    position: absolute;
+    width: 25.5%;
+    left: 0;
+    transition: 1.5s;
+}
+
+.play-again-on {
+    visibility: visible;
+    transition: 1.5s;
+    background-color: darkred;
+}
+
+.turn-indicator {
+    position: absolute;
+    height: 98%;
+    width: 73.7%;
+    top: 0;
+    right: 0;
+    border-top: 1px darkred solid;
+}
+
+.player1-turn {
+    background-color: tomato;
+    transition: 1.5s;
+}
+.player2-turn {
+    background-color: yellowgreen;
+    transition: 1.5s;
+}
+
+.one-turn,
+.two-turn {
+    position: absolute;
+    width: 53%;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    font: 26px "Fira Sans", sans-serif;
+    visibility: hidden;
+    transition: 1.5s;
+    color: antiquewhite;
+}
+
+.on {
+    visibility: visible;
+    transition-delay: 1.5s;
+}
+
+.overlay {
+    position: fixed;
+    height: 480px;
+    width: 574px;
+    left: 3%;
+    top: 11%;
+    background-color: lightgoldenrodyellow;
+    opacity: 0.712;
+    z-index: 2;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: 1.5s;
+}
+
+#modal {
+    width: 100%;
+    background-color: black;
+    opacity: 0.812;
+    transition: 1.5s;
+}
+
+#winner {
+    font: 20px "Fira Sans", sans-serif;
+    margin: 2%;
+    text-align: center;
+    color: white;
+}
+
+.modal-on {
+    transition: 1.5s;
+    visibility: visible;
+    margin-left: 0%;
+}
+
+.column {
+    border-left: 1px lightslategray solid;
+    border-right: 1px lightslategray solid;
+}
+.select-column {
+    border-left: 1px darkgrey solid;
+    border-right: 1px darkgrey solid;
+}

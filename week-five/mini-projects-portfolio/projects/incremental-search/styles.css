@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: wheat;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 40vh;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 18vh;
+    font-style: Arial;
+    /* text-align: center; */
+    /* border: 2px black solid; */
+}
+
+h1 {
+    /* border: 2px darkgrey solid; */
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+}
+input {
+    border: 2px lightseagreen solid;
+    height: 30px;
+    width: 23vw;
+    transform: translateY(-40%);
+}
+
+.highlight {
+    background-color: peachpuff;
+    color: blue;
+    font-style: bold;
+}

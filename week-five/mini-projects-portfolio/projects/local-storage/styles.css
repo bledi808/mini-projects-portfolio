@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightsalmon;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+}
+
+.section {
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.textbox {
+    margin: 4px;
+    height: 50%;
+    width: 90%;
+    position: absolute;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 35%;
+}
+
+.store,
+.display {
+    padding: 2px 10px;
+}
