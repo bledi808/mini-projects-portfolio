@@ -60,6 +60,6 @@ app.get("/projects/:project", (req, res) => {
     }
 });
 
-app.listen(8080, () =>
+app.listen(process.env.PORT || 8080, () =>
     console.log("8080808080808080808080listening8080808080808080808080")
 );
