@@ -1,0 +1,24 @@
+{
+  "name": "mini-projects-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bledi808/mini-projects-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bledi808/mini-projects-portfolio/issues"
+  },
+  "homepage": "https://github.com/bledi808/mini-projects-portfolio#readme",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  }
+}
