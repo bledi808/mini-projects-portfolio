@@ -19,6 +19,7 @@
   "dependencies": {
     "basic-auth": "^2.0.1",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0"
+    "express-handlebars": "^5.2.0",
+    "start": "^5.1.0"
   }
 }
